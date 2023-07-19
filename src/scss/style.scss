@@ -1,0 +1,88 @@
+//<ADD NULL STULES>==========================================================================================================================
+@import "nullstyle.scss";
+//<ADD NULL STULES>==========================================================================================================================
+
+
+//<FONST>=================================================================================================================================
+//100 - thin, 300 - lite/light, 400 - normal/regular, 500 - medium, 600 - semibold, 700 - bold, 800 - extrabolt, 900 - black
+//&display=swap&subset=cyrillic-ext
+@import url(https://fonts.googleapis.com/css?family=Roboto:t:300,regular,500,700&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Bakbak+One:regular);
+//<FONST>=================================================================================================================================
+
+//default value===========================================================================================================================
+$max-width-content: 1200px;
+
+$header-hight: 105px;
+$header-background: white;
+$footer-hight: 417px;
+$footer-background: aquamarine;
+//default value===========================================================================================================================
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.wrapper {
+    min-height: 100%; //default
+    overflow: hidden; //default
+
+    display: flex; //default
+    flex-direction: column; //default
+}
+.content {
+    flex: 1 1 auto; //default
+}
+.container {
+    max-width: $max-width-content; // content on page
+    margin: 0px auto; //default
+    padding: 0 15px;
+    height: 100%;
+}
+.btn {
+    width: 222px;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: #333333;
+    transition: all 0.5s;
+    cursor: pointer;
+    span {
+        margin-right: 6px;
+        display: flex;
+        align-items: center;
+    }
+    img {
+        margin-left: 6px;
+        width: 17px;
+    }
+    &:hover {
+        background: #dbd9d9;
+    }
+}
+.title {
+    font-size: 59px;
+    font-weight: 300;
+    line-height: 64px;
+    color: #bdbdbd;
+}
+
+
+
+
+
+@import 'decription.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'lesson.scss';
+@import 'projects.scss';
+@import 'titleHome.scss';
+@import 'communication.scss';
+
+
+
+
+

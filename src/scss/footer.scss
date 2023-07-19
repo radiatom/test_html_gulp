@@ -1,0 +1,113 @@
+.footer {
+    background: #2c2c2c;
+    &__row {
+        color: white;
+        padding: 45px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 15px 0;
+        h4 {
+            cursor: default;
+            font-weight: 700;
+        }
+        a {
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.42px;
+            color: white;
+        }
+
+        &:nth-child(1) {
+            width: 145px;
+        }
+        &:nth-child(2) {
+            width: 110px;
+            height: 229px;
+        }
+        &:nth-child(3) {
+            width: 270px;
+            height: 229px;
+
+            a {
+                padding-left: 20px;
+                div {
+                    display: inline;
+                }
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 16px;
+                    height: 11px;
+                    padding-right: 16px;
+                    margin-left: -20px;
+                }
+                &:nth-child(2)::before {
+                    background: url("./../img/icons/Vector (1).svg") no-repeat 0/11px;
+                    height: 16px;
+                }
+                &:nth-child(3)::before {
+                    background: url("./../img/icons/Group.svg") no-repeat 0/11px;
+                }
+                &:nth-child(4)::before {
+                    background: url("./../img/icons/gmail.svg") no-repeat 0/11px;
+                }
+            }
+        }
+        &:nth-child(4) {
+            justify-content: start;
+            width: 193px;
+            h4 {
+                margin-bottom: 23px;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    display: inline-block;
+                }
+                .facebook {
+                    width: 15px;
+                    height: 19px;
+                    background: url(./../img/icons/facebook.svg) 0 0 / auto 100%
+                        no-repeat;
+                }
+                .twitter {
+                    width: 22px;
+                    height: 17px;
+                    background: url(./../img/icons/twitter.svg) 0 0 / auto 100%
+                        no-repeat;
+                }
+                .linkedin {
+                    width: 20px;
+                    height: 20px;
+                    background: url(./../img/icons/Linked\ In.svg) 0 0 / auto
+                        100% no-repeat;
+                }
+                .pinterest {
+                    margin-right: 6px;
+                    width: 14px;
+                    height: 19px;
+                    background: url(./../img/icons/pininterest.svg) 0 0 / auto
+                        100% no-repeat;
+                }
+            }
+        }
+    }
+    &__Digital {
+        height: 70px;
+        border-top: 1px solid rgba(200, 200, 200, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(200, 200, 200, 0.5);
+        font-size: 12px;
+        line-height: 22px;
+        font-family: "Open Sans";
+    }
+}

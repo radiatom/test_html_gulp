@@ -1,0 +1,41 @@
+.lesson {
+    margin-bottom: 120px;
+    &__title {
+        margin-bottom: 45px;
+        @media (max-width: 1059px) {
+            text-align: center;
+        }
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 1059px) {
+            justify-content: center;
+        }
+    }
+    &__item {
+        display: flex;
+        width: 50%;
+        min-width: 515px;
+        padding-top: 15px;
+        span {
+            margin: -40px 0;
+            font-family: "Bakbak One";
+            font-size: 200px;
+            color: #f2f2f2;
+            margin-right: 30px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 36px;
+        }
+        @media (max-width: 1059px) {
+            width: 100%;
+            min-width: 0px;
+            align-items: center;
+            span {
+                display: none;
+            }
+        }
+    }
+}
