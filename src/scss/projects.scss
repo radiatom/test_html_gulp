@@ -52,13 +52,13 @@
     &__container {
         width: 565px;
         height: 255px;
-        background: url("./../img/Rectangle 12.svg") 0 0/100% auto no-repeat;
+        background: url("./../img/Rectangle 12.jpg") 0 0/100% auto no-repeat;
         margin: 15px;
         @media (max-width: 1194px) {
             width: 100%;
         }
         @media (max-width: 600px) {
-            background: url("./../img/Rectangle 12.svg") 0 0 / auto 100%
+            background: url("./../img/Rectangle 12.jpg") 0 0 / auto 100%
                 no-repeat;
         }
     }

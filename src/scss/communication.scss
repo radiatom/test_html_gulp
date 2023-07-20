@@ -8,11 +8,15 @@
     }
     &__row {
         display: flex;
+        align-items: start;
         img {
             margin: 0 15px;
             @media (max-width: 960px) {
                 display: none;
             }
+        }
+        >img{
+            width: 100%;
         }
         @media (max-width: 960px) {
             justify-content: center;
