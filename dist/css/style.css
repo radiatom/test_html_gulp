@@ -403,6 +403,7 @@ body {
   font-size: 220px;
   color: #f2f2f2;
   margin-right: 30px;
+  cursor: default;
 }
 
 .lesson__item p {
@@ -705,6 +706,7 @@ body {
 .footer__item h4 {
   cursor: default;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .footer__item a {
@@ -780,6 +782,7 @@ body {
 
 .footer__item:nth-child(4) div a {
   display: inline-block;
+  font-weight: 500;
 }
 
 .footer__item:nth-child(4) div .facebook {
