@@ -2,16 +2,27 @@
     <h3 class="communication__title title">Зв'яжіться з нами</h3>
     <div class="communication__row">
         <form class="communication__form" action="post">
-            <input type="text" placeholder="імя" name="name" />
-            <input type="tel" placeholder="Номер телефона" name="number" />
-            <input type="email" placeholder="E-mail" name="email" />
-            <input
-                type="text"
-                placeholder="Товар/послуга яка вас цікавить"
-                name="theme"
-            />
-            <textarea name="massage" placeholder="Повідомлення"></textarea>
-            <div>
+            <div class="communication__input">
+                <input type="text" name="name"  />
+                <label for="name">Імя</label>
+            </div>
+            <div class="communication__input">
+                <input type="tel" id="number" name="number" />
+                <label for="number">Номер телефона<span>*</span></label>
+            </div>
+            <div class="communication__input">
+                <input type="email" id="email" name="email" />
+                <label for="email">E-mail<span>*</span></label>
+            </div>
+            <div class="communication__input">
+                <input type="text"  name="theme" />
+                <label for="theme">Товар/послуга яка вас цікавить<span>*</span></label>
+            </div>
+            <div class="communication__input">
+                <textarea name="massage" id="massage"></textarea>
+                <label for="massage">Повідомлення<span>*</span></label>
+            </div>
+            <div class="checkbox">
                 <input type="checkbox" name="checkbox" /><span>
                     Надсилаючи заявку Ви погоджуєтесь з політикою
                     конфіденційності
